@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Barbarien Man</title>	
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+
+  	   * , *:after , *:before {
+    margin: 0;
+    padding: 0;
+    }
+
+  	.nav{
+  		text-align: center;
+  		background-color: #999
+  	}
+
+  	.nav-list{
+  		list-style: none;
+  	}
+
+  	.nav-item{
+  		display: inline-block;
+  		padding: 15px
+  	}
+
+  	.nav-item a{
+  		text-decoration: none;
+  		color: #000;
+  		font-size: 20px;
+  		font-family: sans-serif;
+  	}
+
+  	.nav-item a:hover{
+  		color: #990000
+  	}
+
+  	.Home{
+  		text-align: center;
+  		margin-top: 50px;
+  	}
+
+  	.home-title{
+  		font-weight: bold;
+  		padding-bottom: 20px;
+  		font-family: sans-serif;
+
+  	}
+
+  	.home-title span{
+  		color: #666600;
+  	}
+
+  	.home-desc{
+  		line-height: 1.8;
+  		font-family: sans-serif;
+  		margin-bottom: 50px;
+
+  	}
+
+  	.Contact{
+  		background-color: #999;
+  		margin-bottom: 50px
+  	}
+
+  	.Contact .img{
+      width: 500px;
+  	}
+
+  	.img-caption{
+  		margin-left: 700px;
+  		text-align: center;
+  		margin-top: -270px;
+  		padding-bottom: 72px
+  	}
+
+  	.contact-title{
+  		font-size: 30px;
+  		padding-bottom: 20px;
+  		font-family: sans-serif;
+  	}
+
+  	.contact-title span{
+  		color: #666600;
+  	}
+
+  	.contact-desc{
+  		line-height: 1.8;
+  		font-family: sans-serif;
+  		padding-bottom: 10px;
+  	}
+
+  	.contact-span{
+       font-weight: bold;
+       font-family: sans-serif;
+
+  	}
+
+  	.About{
+  		text-align: center;
+  	}
+
+  	.about-title{
+  		font-size: 30px;
+  		font-family: sans-serif;
+  		margin-bottom: 20px
+  	}
+
+  	.about-title span{
+  		color: #666600;
+  	}
+
+  	.person1{
+	float: left;
+	box-sizing: border-box;
+	width: 30%;
+	padding:0;
+	text-align: center;
+	border:1px solid #888;
+	margin-left: 0%
+  	}
+
+  	.person1 img{
+  		width: 400px;
+  		height: 230px
+  	}
+
+  	.person1 h4{
+  		padding-top: 10px;
+  		font-family: sans-serif;
+  		font-weight: bold;
+  		padding-bottom: 10px;
+  		font-size: 20px
+  	}
+
+  	.person1 p{
+  		font-family: sans-serif;
+  		padding-bottom: 20px;
+  		line-height: 1.8
+  	}
+
+  	.person2{
+	float: left;
+	box-sizing: border-box;
+	width: 30%;
+	padding:0;
+	text-align: center;
+	border:1px solid #888;
+	margin-left: 5%
+  	}
+
+  	.person2 img{
+  		width: 400px
+  	}
+
+  	.person2 h4{
+  		padding-top: 10px;
+  		font-family: sans-serif;
+  		font-weight: bold;
+  		padding-bottom: 10px;
+  		font-size: 20px
+  	}
+
+  	.person2 p{
+  		font-family: sans-serif;
+  		padding-bottom: 20px;
+  		line-height: 1.8
+  	}
+  	.person3{
+	float: left;
+	box-sizing: border-box;
+	width: 30%;
+	padding:0;
+	text-align: center;
+	border:1px solid #888;
+	margin-left: 5%
+  	}
+
+  	.person3 img{
+  		width: 400px
+  	}
+
+  	.person3 h4{
+  		padding-top: 10px;
+  		font-family: sans-serif;
+  		font-weight: bold;
+  		padding-bottom: 10px;
+  		font-size: 20px
+  	}
+
+  	.person3 p{
+  		font-family: sans-serif;
+  		padding-bottom: 20px;
+  		line-height: 1.8
+  	}
+
+  	.clear{
+  		clear: both;
+  	}
+
+
+
+  	.See{
+  		margin-top: 70px;
+  		background-color: #999;
+  		text-align: center;
+  	}
+
+  	.see-title{
+  		font-family: sans-serif;
+  		padding-top: 30px;
+  		padding-bottom: 30px;
+  	}
+
+  	.see-title span{
+  		color: #666600;
+  	}
+
+  	.see-list{
+  		color: #000;
+  		font-weight: bold;
+  		font-family: sans-serif;
+  		font-size: 20px;
+  		list-style: none;
+  		padding-bottom: 50px;
+  	}
+
+  	.see-item{
+  		font-weight: normal;
+  		font-size: 15px
+  	}
+
+  	.Footer{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+  	}
+
+  	.footer-desc{
+  		color: #888;
+  		font-size: 20px
+  	}
+  </style>
+
+</head>
+
+<body>
+	
+	<div class="nav">
+		<ul class="nav-list">
+			<li class="nav-item"><a href="#home">Home</a></li>
+			<li class="nav-item"><a href="#contact">Contact</a></li>
+			<li class="nav-item"><a href="#about">About Us</a></li>
+			<li class="nav-item"><a href="#see">See More</a></li>
+
+		</ul>
+	</div>
+
+	<div class="Home" id="home">
+		<h1  class="home-title">Welcome To <span>Barbarien</span> Man</h1>
+		<p class="home-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		
+	</div>
+
+	<div class="Contact" id="contact">
+		<div class="img">
+		<img src="https://www.dooz.ps/wp-content/uploads/jobs/mens-hairdresser-872x468.jpg" alt="">
+		</div>
+		<div class="img-caption">
+		<h2 class="contact-title">Who<span> Am</span> I</h2>
+		<p class="contact-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<span class="contact-span">By Abdou created</span>
+	</div>
+	</div>
+
+	<div class="About" id="about">
+		<h2 class="about-title">My <span>Services</span></h2>
+		<div class="person1">
+			<img src="https://i2.wp.com/alghad.com/wp-content/uploads/2020/04/image-2.jpg?fit=1185%2C766&ssl=1" alt="">
+			<h4>Hair Cut</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+		</div>
+
+		<div class="person2">
+			<img src="https://cdn.al-ain.com/archive/news-image/lhlq_397991.jpg" alt="">
+			<h4>Triming</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+		</div>
+
+		<div class="person3">
+			<img src="https://assets.nn.ps/CACHE/images/uploads/weblog/2017/09/13/%D8%AD%D9%84%D8%A7%D9%82%D8%A9/d1df99a918950ae7c38a621d933faab9.jpg" alt="">
+			<h4>Shave</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+		</div>
+	</div>
+    <div class="clear"></div>
+    <div class="See" id="see">
+    	<h2 class="see-title">More <span>About</span> Me</h2>
+    	<div class="row">
+    		<div class="col-xs-3">
+    	<ul class="see-list">Navigation
+    		<li class="see-item">About me</li>
+    		<li class="see-item">See more</li>
+    		<li class="see-item">Rich me</li>
+    		<li class="see-item">Barber shop</li>
+
+    	</ul>
+    </div>
+
+        <div class="col-xs-3">
+    	<ul class="see-list">Our Contacts
+    		<li class="see-item">About me</li>
+    		<li class="see-item">See more</li>
+    		<li class="see-item">Rich me</li>
+    		<li class="see-item">Barber shop</li>
+
+    	</ul>
+      </div>
+
+      <div class="col-xs-3">
+    	<ul class="see-list">All Srevices
+    		<li class="see-item">About me</li>
+    		<li class="see-item">See more</li>
+    		<li class="see-item">Rich me</li>
+    		<li class="see-item">Barber shop</li>
+
+    	</ul>
+      </div>
+
+      <div class="col-xs-3">
+    	<ul class="see-list">News Letter
+    		<li class="see-item">About me</li>
+    		<li class="see-item">See more</li>
+    		<li class="see-item">Rich me</li>
+    		<li class="see-item">Barber shop</li>
+
+    	</ul>
+    </div>
+</div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="Footer">
+    	<p class="footer-desc">coded by Aya Hammad &copy; 2020</p>
+    </div>
+</body>
+
+</html>
